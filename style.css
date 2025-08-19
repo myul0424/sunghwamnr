@@ -1,0 +1,277 @@
+/* Root variables for easy theming */
+:root {
+  --primary-color: #0041a8;
+  --secondary-color: #00a2ff;
+  --light-bg: #f5f7fa;
+  --text-color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: #ffffff;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 1.5rem;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+header .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: url('hero-bg.png') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  padding: 0 2rem;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary-color);
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  background: var(--light-bg);
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.products, .services {
+  background: #ffffff;
+}
+
+.products h2, .services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.product-grid, .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-item, .service-item {
+  background: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover, .service-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-item h3, .service-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.contact {
+  background: var(--light-bg);
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact form button {
+  padding: 0.75rem 2rem;
+  background: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+  background: var(--primary-color);
+}
+
+.contact-info {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+footer {
+  background: #002a5c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 1rem 0;
+  }
+  header .menu-toggle {
+    display: block;
+    color: #ffffff;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
