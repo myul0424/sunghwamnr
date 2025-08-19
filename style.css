@@ -38,18 +38,55 @@ header .container {
   padding: 1rem 2rem;
 }
 
-header .logo {
+/* Branding lockup (mark + text) */
+.brand {
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
-  font-weight: bold;
+  text-decoration: none;
+  gap: 0.6rem;
 }
 
-/* Small icon next to the logo text */
-.logo-icon {
-  width: 32px;
-  height: 32px;
-  margin-right: 0.5rem;
+/* Company mark image */
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Container for Korean and English names */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-text .company-kr {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/*
+ * English tagline styling
+ * - Slightly smaller size for subtlety
+ * - Increased letter spacing for a refined feel
+ * - Uppercase to match brand guidelines
+ * - Medium weight for clarity without overpowering the Korean name
+ * - Muted blue‑grey colour to complement the primary palette
+ */
+.brand-text .company-en {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #a8c2e6;
+}
+
+/* On small screens, hide the English tagline to save space */
+@media (max-width: 640px) {
+  .brand-text .company-en {
+    display: none;
+  }
 }
 
 header nav ul {
