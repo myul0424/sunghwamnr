@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | SUNGHWA M&amp;R</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo"><img src="logo-icon.png" alt="" class="logo-icon">SUNGHWA M&amp;R</div>
+      <nav>
+        <ul>
+          <li><a href="index-en.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index-en.html#services">Services</a></li>
+          <li><a href="index-en.html#contact">Contact</a></li>
+          <li><a href="products-kr.html" class="language-link">KR</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Hero banner for products page -->
+  <section class="hero" style="height: 50vh;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Our Product Range</h1>
+      <p>Explore our diverse lineup of refractory materials, heating elements and industrial solutions.</p>
+    </div>
+  </section>
+
+  <!-- Products listing -->
+  <section class="products" id="product-list">
+    <div class="container">
+      <h2>Product Categories</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <h3>Shaped Refractory Bricks</h3>
+          <p>High‑density bricks engineered to withstand extreme temperatures, ideal for furnaces, kilns and incinerators.</p>
+        </div>
+        <div class="product-item">
+          <h3>Monolithic Refractory Castables</h3>
+          <p>Versatile castable materials designed for in‑situ applications, offering excellent resistance to thermal shock and abrasion.</p>
+        </div>
+        <div class="product-item">
+          <h3>Heating Elements</h3>
+          <p>Silicon carbide and molybdenum disilicide heating elements that deliver reliable performance and long service life.</p>
+        </div>
+        <div class="product-item">
+          <h3>Insulation Materials</h3>
+          <p>Lightweight ceramic fibers and boards providing exceptional insulation for high‑temperature environments.</p>
+        </div>
+        <div class="product-item">
+          <h3>Industrial Furnaces</h3>
+          <p>Custom‑designed electric and gas‑fired furnaces built to meet specific process requirements across industries.</p>
+        </div>
+        <div class="product-item">
+          <h3>SiC Rollers</h3>
+          <p>Durable silicon carbide rollers used for transporting materials within kilns and continuous furnaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact prompt -->
+  <section class="contact">
+    <div class="container">
+      <h2>Need more information?</h2>
+      <p>Contact us for detailed specifications, datasheets and pricing.</p>
+      <a href="index-en.html#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 SUNGHWA M&amp;R. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

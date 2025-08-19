@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>제품 소개 | 성화 M&amp;R</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo"><img src="logo-icon.png" alt="" class="logo-icon">성화 M&amp;R</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="products-kr.html">제품</a></li>
+          <li><a href="index.html#services">서비스</a></li>
+          <li><a href="index.html#contact">문의</a></li>
+          <li><a href="products.html" class="language-link">EN</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Hero banner for products page -->
+  <section class="hero" style="height: 50vh;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>제품 카테고리</h1>
+      <p>성화 M&amp;R의 다양한 제품을 확인해보세요.</p>
+    </div>
+  </section>
+
+  <!-- Products listing -->
+  <section class="products" id="product-list">
+    <div class="container">
+      <h2>제품 분류</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <h3>정형 내화물</h3>
+          <p>극한 온도를 견디도록 설계된 고밀도 내화 벽돌로, 각종 산업로와 가마에 적합합니다.</p>
+        </div>
+        <div class="product-item">
+          <h3>비정형 내화 캐스터블</h3>
+          <p>현장 시공이 가능한 캐스터블 내화물로, 우수한 내열충격성과 내마모성을 제공합니다.</p>
+        </div>
+        <div class="product-item">
+          <h3>히팅 요소</h3>
+          <p>실리콘 카바이드와 모리브덴 디실리사이드 등 다양한 히팅 요소로 안정적인 열 성능을 보장합니다.</p>
+        </div>
+        <div class="product-item">
+          <h3>단열재</h3>
+          <p>세라믹 섬유와 보드를 포함한 경량 단열재로, 고온 환경에서 탁월한 단열 성능을 제공합니다.</p>
+        </div>
+        <div class="product-item">
+          <h3>산업용 가마</h3>
+          <p>전기로 및 가스로 운전하는 맞춤형 산업용 가마로, 다양한 공정 요구 사항을 충족합니다.</p>
+        </div>
+        <div class="product-item">
+          <h3>SiC 롤러</h3>
+          <p>산업용 가마 내 물류 시스템에 사용되는 내구성 높은 실리콘 카바이드 롤러입니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact prompt -->
+  <section class="contact">
+    <div class="container">
+      <h2>자세한 정보가 필요하신가요?</h2>
+      <p>제품 사양, 자료 및 견적 문의는 연락 페이지를 통해 문의해주세요.</p>
+      <a href="index.html#contact" class="btn">문의하기</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 성화 M&amp;R. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
